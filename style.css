@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9c8f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.container {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 60vw;
+}
+
+label {
+  font-size: 100px;
+  padding: 5px;
+  color: blueviolet;
+  font-weight: bolder;
+}
+
+#url {
+  padding: 10px;
+  border-radius: 30px;
+  width: 60%;
+}
+#url::placeholder {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  color: purple;
+}
+button {
+  padding: 10px;
+  width: 40%;
+  border-radius: 40px;
+  border-color: purple;
+  background-color: #a8eae1;
+  color: purple;
+}
+#result {
+  padding-top: 3rem;
+  display: block;
+  flex-direction: column;
+  color: white;
+}
+p {
+  color: whitesmoke;
+  font-size: 24px;
+  color: blue;
+}
+
+/*-------------Media---querie----------------------*/
+
+@media screen and (max-width: 500px) {
+  label {
+    font-size: 1rem;
+  }
+  #url {
+    width: 100%;
+  }
+  button {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  label {
+    font-size: 1rem;
+  }
+  #url {
+    width: 100%;
+  }
+  button {
+    width: 60%;
+  }
+}
